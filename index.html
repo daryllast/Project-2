@@ -6,28 +6,73 @@
         <title>Weather App</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Antonio&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css" />
         <script src="scripts.js" defer></script>
     </head>
     <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="z-index: 99;">
+            <a class="navbar-brand" href="#">Weather App</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="https://weather.com/weather/tenday/l/170bdafa1324b2450d2331179de4f498150c6fff795a1bce00cc1f43a3652f8c">Forecasts<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" target="_blank" href="https://weather.com/weather/radar/interactive/l/170bdafa1324b2450d2331179de4f498150c6fff795a1bce00cc1f43a3652f8c">Radar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" target="_blank" href="https://weather.com/storms/severe/video/texas-tornado-sends-debris-flyin">Videos and Photos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Today's Weather (Current)</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+        <div class="vertical-center" >
+        <div class="row">  
+            <div class="col-md-12">
+                <div class="title">
+                    <h1>A Storms Brewing...<br />Check If It Will Hit Your City</h1>
+                </div>
+            </div>   
         
-        <div class="card">
-            <div class="search">
-                <input type="text" class="search-bar" placeholder="Search for your City">
-                <button id="search">Search</button>
-            </div>
-            <div class="weather loading">
-                <h2 class="city">Weather in Denver</h2>
-                <h1 class="temp">51°C</h1>
-                <div class="flex">
-                <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="" class="icon" />
-                <div class="description">Cloudy</div>
-                </div>
-                <div class="humidity">Humidity: 60&#37;</div>
-                <div class="wind">Wind speed: 6.2mi/h</div>
-                </div>
-            </div>
-           
+        </div>
+
+        <div class="row">  
+            <div class="col-md-12">
+                <div class="card2">
+                    <div class="search">
+                        <input type="text" class="search-bar" placeholder="Search for your City">
+                        <button id="search search2">Search</button>
+                    </div>
+                    <div class="weather loading">
+                        <h2 class="city">Weather in Denver</h2>
+                        <h1 class="temp">51°C</h1>
+                        <div class="flex">
+                        <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="" class="icon" />
+                        <div class="description">Cloudy</div>
+                        </div>
+                        <div class="humidity">Humidity: 60&#37;</div>
+                        <div class="wind">Wind speed: 6.2 mph</div>
+                        </div>
+                    </div>
+                
+            </div>   
+        
+        </div>
+        </div>
+        
+       
+        
+       
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     </body>
 </html>
 
