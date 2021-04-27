@@ -32,7 +32,7 @@ let weather = {
         document.querySelector(".weather").classList.remove("loading");
         document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "')"
     },
-    
+
     search: function() {
     this.fetchWeather(document.querySelector(".search-bar").value);
     },
@@ -49,50 +49,3 @@ document.querySelector(".search-bar").addEventListener("keyup", function(event){
 
 });
 
-// Background Image API Key: 21328747-b6e2d72b9d549eeb510fa674d
-
-// let backgroundImages = {
-//     fetchBackgroundImage: function(cityName){
-//         {
-//             fetch("https://pixabay.com/api/?key=21328747-b6e2d72b9d549eeb510fa674d&q=
-//             +cityName&image_type=photo"
-    
-//             )
-//             .then((response) => response.json())
-//             .then((data) => this.displayImage(data));
-//         },
-    
-//         displayImage: function(data){
-//             const { cityName } = data;
-//             console.log(cityName);
-//             document.querySelector(".backgroundImage").src = "http://openweathermap.org/img/wn/" + cityName + "@2x.png";
-//             document.querySelector(".description").innerText = description;
-            
-//             let tempC = (Math.round(temp) - 32) * (5/9);
-//             document.querySelector(".temp").innerText = Math.round(temp) + "°F / " + Math.round(tempC) + "°C";
-    
-//             document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
-//             document.querySelector(".wind").innerText = "Wind Speed: " + Math.round(speed) + " mph";
-//             document.querySelector(".weather").classList.remove("loading");
-//             document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "')"
-//         },
-        
-//         search: function() {
-//         this.fetchWeather(document.querySelector(".search-bar").value);
-//         },
-//     };
-    
-//     document.querySelector(".search button").addEventListener("click", function () {
-//     weather.search();
-//     });
-    
-//     document.querySelector(".search-bar").addEventListener("keyup", function(event){
-//         if (event.key == "Enter"){
-//             weather.search();
-//         }
-    
-//     });
-    
-//     }
-
-// }
